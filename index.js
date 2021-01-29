@@ -2,17 +2,17 @@ var params = (new URL(document.location)).searchParams;
 var key = params.get('key');
 
 $(function () {
-    // 送信
+    // 騾∽ｿ｡
     $('form').submit(function () {
-        var name = $('textarea[name="name"]').val();
+        var reasons = $('textarea[name="reasons"]').val();
         // var date = $('input[name="date"]').val();
         // var tool = $('input[name="tool"]').val();
         
-        //var msg = `${key}\n朝礼/終礼不参加の理由：${reasons}\n返信期限：${date}\n使用ツール：${tool}`;
-        
-        var msg = `ご回答内容\n名前：${name}\n郵便番号：${number}\n面談希望日：${date}`;
+        //var msg = `${key}\n譛晉､ｼ/邨ら､ｼ荳榊盾蜉縺ｮ逅�罰�${reasons}\n霑比ｿ｡譛滄剞�${date}\n菴ｿ逕ｨ繝��繝ｫ�${tool}`;
+        var msg = `${key}\n逅�罰�${reasons}`;
         sendText(msg);
 
         return false;
     });
 });
+

@@ -10,7 +10,7 @@ $(function () {
         
         //var msg = `${key}\n朝礼/終礼不参加の理由：${reasons}\n返信期限：${date}\n使用ツール：${tool}`;
         
-        var msg = `ご回答内容\n名前：${name}`;
+        var msg = `ご回答内容\n名前：${name}\n郵便番号：${number}\n面談希望日：${date}`;
         sendText(msg);
 
         return false;

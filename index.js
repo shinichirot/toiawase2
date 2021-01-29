@@ -9,8 +9,9 @@ $(function () {
         var date = $('textarea[name="date"]').val();
         // var date = $('input[name="date"]').val();
         // var tool = $('input[name="tool"]').val();
-        
-        var msg = `◆回答内容\n\n職種：${key}\n名前：${name}\n郵便番号：${adress}\n面談希望日：${date}\n\n`;
+       
+        sendText(`◆回答内容`);
+        var msg = `職種：${key}\n名前：${name}\n郵便番号：${adress}\n面談希望日：${date}\n\n`;
         sendText(msg);
 
         return false;

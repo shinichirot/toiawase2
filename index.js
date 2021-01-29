@@ -10,8 +10,7 @@ $(function () {
         // var date = $('input[name="date"]').val();
         // var tool = $('input[name="tool"]').val();
         
-        //var msg = `${key}\n名前${name}\n郵便番号${adress}\n面談希望日${date}`;
-        var msg = `${key}\n逅�罰�${reasons}`;
+        var msg = `${key}\n名前${name}\n郵便番号${adress}\n面談希望日${date}`;
         sendText(msg);
 
         return false;

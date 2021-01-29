@@ -26,10 +26,10 @@ function sendText(text) {
 // function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
-        'text': text
-    },{
+        'text': "◆回答内容"
+    }{
         'type': 'text',
-        'text': "回答ありがとうございました"
+        'text': text
     }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {

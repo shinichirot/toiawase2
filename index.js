@@ -11,7 +11,7 @@ $(function () {
         // var tool = $('input[name="tool"]').val();
        
         sendText(`◆回答内容`);
-        var msg = `職種：${key}\n名前：${name}\n郵便番号：${adress}\n面談希望日：${date}\n\n`;
+        var msg = `職種：${key}\n名前：${name}\n郵便番号：${adress}\n面談希望：${date}\n\n`;
         sendText(msg);
 
         return false;

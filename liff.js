@@ -26,9 +26,6 @@ function sendText(text) {
 // function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
-        'text': "◆回答内容"
-    },{
-        'type': 'text',
         'text': text
     }]).then(function () {
         liff.closeWindow();

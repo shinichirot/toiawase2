@@ -16,7 +16,7 @@ $(function () {
         //var date = $('input[name="date"]').val();
        
         //var msg = `◆回答内容\n職種：${key}\n名前：${name}\n郵便番号：${adress}\n電話番号：${tel}\n資格：${shikaku}\n面談希望：${date}`;
-        sendText(msg);
+        //sendText(msg);
 
         return false;
     });

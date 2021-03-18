@@ -56,17 +56,9 @@
         <div>
             <input class="form-control w-100 mt-1" name="date" maxlength="10" type="date">
         </div>
-        
-        
-        <!--      
-        <p class="mt-3">使用しているツールURL（SS等）</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="tool">
-        </div>
-        -->
 
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
-
+                
     </form>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -74,7 +66,29 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-   <script src="liff.js"></script>
+ 
+    <!-- <script src="liff.js"></script>-->
+    <script>
+function MyFunction1() {
+    // 騾∽ｿ｡
+    $('form').submit(function () {
+
+        sendText(`回答ありがとうございました`);
+        
+        var name = $('textarea[name="name"]').val();
+        var adress = $('textarea[name="adress"]').val();
+        var tel = $('textarea[name="tel"]').val();
+        var shikaku = $('input[name="shikaku"]').val();
+        
+        var date = $('input[name="date"]').val();
+       
+        var msg = `◆回答内容\n職種：${key}\n名前：${name}\n郵便番号：${adress}\n電話番号：${tel}\n資格：${shikaku}\n面談希望：${date}`;
+        sendText(msg);
+
+        return false;
+    })
+    </script>
+                
    <script src="index.js"></script>
 </body>
 

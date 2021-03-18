@@ -16,7 +16,7 @@ $(function () {
         
         var date = $('input[name="date"]').val();
        
-        var msg = `◆回答ありがとうございます\n名前：${name}\n郵便番号：${adress}\n電話番号：${tel}\n年代：${age}\n資格：${shikaku}\n面談希望：${date}\n連絡方法：${method}`;
+        var msg = `◆回答ありがとうございます\n職種:${key}\n名前：${name}\n郵便番号：${adress}\n電話番号：${tel}\n年代：${age}\n資格：${shikaku}\n面談希望：${date}\n連絡方法：${method}`;
         sendText(msg);
 
         return false;

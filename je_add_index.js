@@ -6,7 +6,7 @@ $(function () {
     // 騾∽ｿ｡
     $('form').submit(function () {
 
-        sendText(`情報登録ありがとうございました`);
+        sendText(`追加登録ありがとうございました`);
         
         var move = $('input[name="move"]').val();
         var days = $('select[name="days"]').val();

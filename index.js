@@ -12,10 +12,11 @@ $(function () {
         var tel = $('textarea[name="tel"]').val();
         var age = $('textarea[name="age"]').val();
         var shikaku = $('input[name="shikaku"]').val();
+        var method = $('input[name="method"]').val();
         
         var date = $('input[name="date"]').val();
        
-        var msg = `◆回答内容\n職種：${key}\n名前：${name}\n郵便番号：${adress}\n電話番号：${tel}\n年代：${age}\n資格：${shikaku}\n面談希望：${date}`;
+        var msg = `◆回答内容\n職種：${key}\n名前：${name}\n郵便番号：${adress}\n電話番号：${tel}\n年代：${age}\n資格：${shikaku}\n面談希望：${date}\n連絡方法：${method}`;
         sendText(msg);
 
         return false;

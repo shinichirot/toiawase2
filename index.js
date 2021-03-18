@@ -5,7 +5,7 @@ $(function () {
     // 騾∽ｿ｡
     $('form').submit(function () {
 
-        sendText(`回答ありがとうございました`);
+        sendText(`情報登録ありがとうございました`);
         
         var name = $('textarea[name="name"]').val();
         var adress = $('textarea[name="adress"]').val();

@@ -8,16 +8,12 @@ $(function () {
 
         sendText(`情報登録ありがとうございました`);
         
-        var name = $('textarea[name="name"]').val();
-        var adress = $('textarea[name="adress"]').val();
-        var tel = $('textarea[name="tel"]').val();
-        var age = $('textarea[name="age"]').val();
-        var shikaku = $('input[name="shikaku"]').val();
-        var method = $('input[name="method"]').val();
-        
-        var date = $('input[name="date"]').val();
-       
-        var msg = `◆回答内容\n職種：${key}\n名前：${name}\n郵便番号：${adress}\n電話番号：${tel}\n年代：${age}\n資格：${shikaku}\n面談希望：${date}\n連絡方法：${method}`;
+        var move = $('input[name="move"]').val();
+        var days = $('select[name="days"]').val();
+        var in_date = $('input[name="in_date"]').val();
+        var other = $('input[name="other"]').val();
+              
+        var msg = `◆回答内容\n移動手段：${move}\n希望日数：${days}\n入社可能日：${in_date}\その他：${other}`;
         sendText(msg);
 
         return false;
